@@ -1,0 +1,170 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+{% load static %} <!-- 加载静态文件标签库 -->
+{% block content %}
+
+
+<!-- 轮播组件 -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-bs-interval="2000">
+    <!-- 轮播指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- 轮播项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="{% static '/img/slide1.png' %}" alt="First slide" class="img-responsive">
+            <div class="carousel-caption d-none d-md-block">南题<br>NJUP</div>
+        </div>
+        <div class="item">
+            <img src="{% static '/img/slide2.png' %}" alt="Second slide" class="img-responsive">
+            <div class="carousel-caption d-none d-md-block">智能批改 个性化反馈</div>
+        </div>
+        <div class="item">
+            <img src="{% static '/img/slide3.png' %}" alt="Third slide" class="img-responsive">
+            <div class="carousel-caption d-none d-md-block">欢迎各位同学使用智能家教</div>
+        </div>
+    </div>
+
+    <!-- 轮播导航 -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+
+<div class="content text-center">
+    <h1><small>欢迎使用</small></h1>
+    <h1><strong>南题</strong></h1>
+    <h1>智能阅卷与反馈系统</h1>
+    <!-- <h2><small>-请选择登录或注册以继续-</small></h2> -->
+</div>
+
+
+<div class="about-us-section">
+    <h1 class="about-us-title">关于我们</h1>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <!-- 引入Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="{% static 'fonts/Pacifico.css' %}">
+    <div class="about-us-content">
+        <div class="item">
+            <div class="number">1</div>
+            <div class="description">
+                <h2>智能化教育评价，提升阅卷效率与反馈质量</h2>
+                <p><span class="highlight">南题(NJU Question Puzzle,
+                        NJUP)</span>本系统是为南京大学学生量身打造，致力于解决大学生专业课程考试题目查询困难，并专注于主观题智能评阅在高等教育教学中的深度应用。通过融合自然语言处理技术与先进的大语言模型，系统能够提供高效、精准的自动评分与个性化学习反馈，助力提升学生在答题过程中的表达能力与逻辑思维水平。针对传统人工批改效率低、标准不统一等问题，南题系统致力于构建一套数据驱动、贴近学科特点的智能评价体系，从而有效辅助教学改进，推动以学生为中心的教学模式发展。
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="number">2</div>
+            <div class="description">
+                <h2 class="about-us-content">技术创新驱动，确保评分精准与服务优化</h2>
+                <p>南题系统基于大语言模型的 API
+                    接口构建，结合自然语言处理与深度语义理解能力，实现对主观题答案内容的精准解析与智能化评分。相较于传统方式，该系统不仅能提升评分的一致性与可靠性，还能从多个维度对作答内容进行分层评估，包括答案结构、推理逻辑以及关键知识点的覆盖情况等，从而更全面地反映学生的思维过程。与此同时，系统在运行效率方面也进行了多项优化，具备更快的数据读写能力和高效的批量评分功能。除此之外，它还支持多语言答题识别，并可根据学生的表现生成定制化的学习建议，显著增强了平台的实用性与适应性。
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="number">3</div>
+            <div class="description">
+                <h2>用户友好设计，满足多样化应用场景需求</h2>
+                <p>为提升使用体验，南题系统采用了清晰简洁的界面设计，划分为教师端与学生端，以满足不同角色的操作需求。界面布局注重易用性与交互逻辑，融入多项人性化功能，如实时格式提示、人机协同评分等，有效提升操作效率与友好度。系统具备广泛的适用场景，支持在线考试与课程作业批改，也可应用于企业培训中的学习成效评估。整个流程构建了一个完整的智能评价闭环：从学生作答提交，到系统自动生成评分与反馈，再由教师进行复核确认，最终实现数据归档与个性化报告输出，全面助力教育评估向智能化、数据化方向升级。
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> -->
+
+<div class="content text-center">
+    <address>
+        <strong>有问题请联系</strong><br>
+        <a>522024290004@smail.nju.edu.cn</a>
+    </address>
+</div>
+<style>
+    .about-us-section {
+        padding: 40px;
+        /* 顶部和底部留出空间 */
+        background-color: #EAEDFD;
+        margin: 0px;
+        /* 左右留出空间 */
+        border-radius: 8px;
+    }
+
+    /* .no-backgroundclip .about-us-title {*/
+    /* color: #558EF8; 不支持时的回退颜色 */
+    /* } */
+    .about-us-title {
+        font-size: 3.5em;
+        font-family: 'Noto Sans Simplified';
+        /* ,cursive 是手写体 */
+        background: linear-gradient(135deg, #558EF8 0%, #797CE0 5%, #8D6AC6 10%, #ad78bf 15%);
+        /* 渐变色 */
+        /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        margin-bottom: 20px;
+    }
+
+    .about-us-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .item {
+        display: flex;
+        /* 横向布局 */
+        align-items: center;
+        gap: 40px;
+        /* 间距 */
+    }
+
+    .number {
+        background-color: #424656;
+        color: #eaeaea;
+        padding: 10px;
+        border-radius: 4px;
+        font-size: 2em;
+        width: 40px;
+        text-align: center;
+    }
+
+    .description {
+        flex: 1;
+        /* 占据剩余空间 */
+    }
+
+    .description h2 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .description p {
+        font-size: 1.3em;
+        line-height: 1.8;
+    }
+
+    .highlight {
+        color: #368EFF;
+        font-weight: bold;
+    }
+</style>
+{% endblock %}
