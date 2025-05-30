@@ -18,7 +18,7 @@
 
 ## 环境配置与运行方法
 
-详见[系统设计与开发文档](https://github.com/fading-future/NJUP/blob/main/%E5%8D%97%E9%A2%98%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3.pdf)4.2节。
+详见[南题开发文档](https://github.com/fading-future/NJUP/blob/main/%E5%8D%97%E9%A2%98%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3.pdf)。
 
 ### 关于账号
 
